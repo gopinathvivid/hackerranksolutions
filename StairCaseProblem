@@ -1,0 +1,21 @@
+Input : 6
+Expected Output: 
+     #
+    ##
+   ###
+  ####
+ #####
+######
+
+Solution in Java: // Below method accepts integer as parameter to print the staircase
+    public static void staircase(int n) {
+        for (int i = 1; i <= n; i++) {
+            for (int j = i; j < n; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 0; k < i; k++) {
+                System.out.print("#");
+            }
+            System.out.println();
+        }
+    }
